@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Registered Events</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <a href="{{ url_for('dashboard') }}" class="navbar-title">
+            Student Events
+        </a>
+
+        <div class="navbar-links">
+
+            <a href="{{ url_for('dashboard') }}">
+                Dashboard
+            </a>
+
+            <a href="{{ url_for('events') }}">
+                Events
+            </a>
+
+            <a href="{{ url_for('my_events') }}">
+                My Events
+            </a>
+
+            <a href="{{ url_for('logout') }}" class="logout-btn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- My Events -->
+    <div class="my-events-container">
+
+        <h1>My Registered Events</h1>
+
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+
+            {% if messages %}
+
+                {% for message in messages %}
+
+                    <div class="flash-message">
+                        {{ message }}
+                    </div>
+
+                {% endfor %}
+
+            {% endif %}
+
+        {% endwith %}
+
+
+        {% if events %}
+
+            {% for event in events %}
+
+                <div class="my-event-card">
+
+                    <h2>
+                        {{ event["name"] }}
+                    </h2>
+
+                    <p>
+                        📅 <strong>Date:</strong>
+                        {{ event["date"] }}
+                    </p>
+
+                    <p>
+                        ⏰ <strong>Time:</strong>
+                        {{ event["time"] }}
+                    </p>
+
+                    <p>
+                        📍 <strong>Venue:</strong>
+                        {{ event["venue"] }}
+                    </p>
+
+                    <p class="status">
+                        ✅ Registered
+                    </p>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <div class="event-card">
+
+                <h2>No Registered Events</h2>
+
+                <p>
+                    You have not registered for any events yet.
+                </p>
+
+                <a href="{{ url_for('events') }}"
+                   class="btn btn-primary">
+                    View Available Events
+                </a>
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>

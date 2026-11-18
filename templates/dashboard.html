@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <a href="{{ url_for('dashboard') }}" class="navbar-title">
+            Student Events
+        </a>
+
+        <div class="navbar-links">
+
+            <a href="{{ url_for('dashboard') }}">
+                Dashboard
+            </a>
+
+            <a href="{{ url_for('events') }}">
+                Events
+            </a>
+
+            <a href="{{ url_for('my_events') }}">
+                My Events
+            </a>
+
+            <a href="{{ url_for('logout') }}" class="logout-btn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+
+        <h1>Student Event Management</h1>
+
+        <h2>
+            Welcome, {{ name }}! 👋
+        </h2>
+
+        <p>
+            Manage your college events easily.
+        </p>
+
+
+        <!-- Dashboard Buttons -->
+        <div class="dashboard-buttons">
+
+            <a href="{{ url_for('events') }}"
+               class="btn btn-primary">
+                📅 View Events
+            </a>
+
+            <a href="{{ url_for('my_events') }}"
+               class="btn btn-primary">
+                🎫 My Registered Events
+            </a>
+
+            <a href="{{ url_for('logout') }}"
+               class="btn btn-danger">
+                Logout
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+

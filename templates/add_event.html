@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Event</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <a href="{{ url_for('admin') }}" class="navbar-title">
+            Student Events - Admin
+        </a>
+
+        <div class="navbar-links">
+
+            <a href="{{ url_for('admin') }}">
+                Dashboard
+            </a>
+
+            <a href="{{ url_for('add_event') }}">
+                Add Event
+            </a>
+
+            <a href="{{ url_for('admin_logout') }}" class="logout-btn">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Add Event Form -->
+    <div class="form-container">
+
+        <h1>Add New Event</h1>
+
+        <p>Create a new college event</p>
+
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+
+            {% if messages %}
+
+                {% for message in messages %}
+
+                    <div class="flash-message">
+                        {{ message }}
+                    </div>
+
+                {% endfor %}
+
+            {% endif %}
+
+        {% endwith %}
+
+
+        <!-- Event Form -->
+        <form method="POST"
+              action="{{ url_for('add_event') }}"
+              enctype="multipart/form-data">
+
+
+            <!-- Event Name -->
+            <div class="form-group">
+
+                <label for="name">
+                    Event Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter event name"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Date -->
+            <div class="form-group">
+
+                <label for="date">
+                    Event Date
+                </label>
+
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Time -->
+            <div class="form-group">
+
+                <label for="time">
+                    Event Time
+                </label>
+
+                <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Venue -->
+            <div class="form-group">
+
+                <label for="venue">
+                    Venue
+                </label>
+
+                <input
+                    type="text"
+                    id="venue"
+                    name="venue"
+                    placeholder="Enter event venue"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Event Image -->
+            <div class="form-group">
+
+                <label for="image">
+                    Event Image
+                </label>
+
+                <input
+                    type="file"
+                    id="image"
+                    name="image"
+                    accept="image/*"
+                >
+
+            </div>
+
+
+            <!-- Submit Button -->
+            <button type="submit"
+                    class="form-submit">
+                ➕ Add Event
+            </button>
+
+        </form>
+
+
+        <!-- Back to Admin -->
+        <div class="form-link">
+
+            <p>
+                <a href="{{ url_for('admin') }}">
+                    ← Back to Admin Dashboard
+                </a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

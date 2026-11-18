@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Event Management</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <a href="{{ url_for('home') }}"
+           class="navbar-title">
+            Student Events
+        </a>
+
+        <div class="navbar-links">
+
+            <a href="{{ url_for('login') }}">
+                Login
+            </a>
+
+            <a href="{{ url_for('register') }}">
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Home Section -->
+
+    <div class="home-container">
+
+        <div class="home-content">
+
+            <h1>
+                Student Event Management System
+            </h1>
+
+            <h2>
+                Welcome Students! 🎓
+            </h2>
+
+            <p>
+                Discover, register and manage your college
+                events easily in one place.
+            </p>
+
+
+            <div class="home-buttons">
+
+                <a href="{{ url_for('login') }}"
+                   class="home-btn login-btn">
+                    Login
+                </a>
+
+                <a href="{{ url_for('register') }}"
+                   class="home-btn register-home-btn">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Features -->
+
+        <div class="features">
+
+            <div class="feature-card">
+
+                <h3>📅 View Events</h3>
+
+                <p>
+                    Explore upcoming college events
+                    with date, time and venue.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>🎫 Easy Registration</h3>
+
+                <p>
+                    Register for your favourite
+                    events quickly and easily.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>📋 My Events</h3>
+
+                <p>
+                    View all the events you have
+                    registered for.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
