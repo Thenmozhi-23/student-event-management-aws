@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-The Student Event Management System is a cloud-based web application designed to help students view available events and register for different college activities online.
+The Student Event Management System is a cloud-based web application designed to help students of a single college view available events, including workshops, cultural programs, and programming events, and register for them online.
 
 
 
