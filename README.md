@@ -351,8 +351,9 @@ The project provides practical experience in:
 - SNS email notifications.
 
 ---
+## 11. Application Output
 
-## 11. Future Improvements
+## 12. Future Improvements
 
 The application can be enhanced with:
 
@@ -369,7 +370,7 @@ The application can be enhanced with:
 
 ---
 
-## 12. Conclusion
+## 13. Conclusion
 
 The Student Event Management System demonstrates how AWS services can be integrated to build a cloud-based web application.
 
