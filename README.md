@@ -95,6 +95,7 @@ The architecture follows a three-tier AWS deployment model.
 
 
 **Architecture Image:**
+![Student Event Management System AWS Architecture](architecture.png)
 
 
 
@@ -378,4 +379,4 @@ By combining Amazon S3, CloudFront, EC2, Application Load Balancer, RDS, VPC, Cl
 
 
 
-This project provides practical exposure to AWS Cloud Computing and DevOps concepts. entha content mathi soliten
+This project provides practical exposure to AWS Cloud Computing.
