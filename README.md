@@ -371,18 +371,9 @@ The project provides practical experience in:
 
 ## 12. Future Improvements
 
-The application can be enhanced with:
-
-- Student login and authentication.
-- Admin dashboard.
-- Event creation and management.
-- Event registration confirmation.
-- Email notifications for students.
-- Docker containerization.
-- Jenkins CI/CD pipeline.
-- Auto Scaling configuration.
-- Automated database backups.
-- HTTPS using SSL/TLS certificates.
+- QR code-based event entry verification.
+- Automated student attendance tracking.
+- Digital event participation certificates.
 
 ---
 
