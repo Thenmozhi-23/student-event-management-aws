@@ -353,6 +353,22 @@ The project provides practical experience in:
 ---
 ## 11. Application Output
 
+### 1. Homepage
+![Homepage](screenshots/homepage.png.png)
+
+### 2. Create Account
+![Create Account](screenshots/create%20account.png)
+
+### 3. Students Events
+![Students Events](screenshots/students%20events.png)
+
+### 4. Registered Events
+![Registered Events](screenshots/registered%20events.png)
+
+### 5. Admin Dashboard
+![Admin Dashboard](screenshots/admin%20dashboard.png)
+
+
 ## 12. Future Improvements
 
 The application can be enhanced with:
