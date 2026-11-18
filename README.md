@@ -95,7 +95,7 @@ The architecture follows a three-tier AWS deployment model.
 
 
 **Architecture Image:**
-![Student Event Management System AWS Architecture](architecture.png)
+![Student Event Management System AWS Architecture](architecture.png.png)
 
 
 
