@@ -291,20 +291,21 @@ The project provides practical experience in:
 
 ## 11. Application Output
 
-### Homepage
-### Homepage
-![Homepage](screenshots/homepage-new.png)
+## Application Screenshots
 
-### Student Registration
-![Registration](screenshots/registration.png)
+### 1. Home Page
+![Home Page](screenshots/homepage.png.png)
 
-### Event Details
-![Event Details](screenshots/event-details.png)
+### 2. Create Account
+![Create Account](screenshots/create%20account.png)
 
-### Registration Success
-![Success](screenshots/success.png)
+### 3. Student Events
+![Student Events](screenshots/students%20events.png)
 
-### Admin Dashboard
+### 4. Registered Events
+![Registered Events](screenshots/registered%20events.png)
+
+### 5. Admin Dashboard
 ![Admin Dashboard](screenshots/admin%20dashboard.png)
 
 ## 12. Future Improvements
