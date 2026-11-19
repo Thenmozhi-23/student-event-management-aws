@@ -305,7 +305,7 @@ The project provides practical experience in:
 ![Success](screenshots/success.png)
 
 ### Admin Dashboard
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](screenshots/admin%20dashboard.png)
 
 ## 12. Future Improvements
 
