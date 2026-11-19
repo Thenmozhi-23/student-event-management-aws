@@ -1,4 +1,4 @@
-# Student Event Management System – AWS Architecture
+# Student Event Management System
 
 ## 1. Project Overview
 
