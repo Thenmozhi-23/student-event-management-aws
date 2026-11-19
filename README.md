@@ -2,13 +2,13 @@
 
 ## 1. Project Overview
 
-The Student Event Management System is a cloud-based web application designed to help students of a single college view available events, including workshops, cultural programs, and programming events, and register for them online.
+The Student Event Management System is a cloud-based web application developed to manage college events efficiently. It allows students to view available events, such as workshops, cultural programs, and programming events, and register for them online.
 
-The main objective of this project is to design a secure, scalable, cost-effective and highly available application infrastructure using Amazon Web Services (AWS).
+The main objective of this project is to build a secure, scalable, cost-effective, and reliable application infrastructure using Amazon Web Services (AWS).
 
-Students can access the website, view event details and register by providing their personal information.
+Students can create an account, log in, view event details, and register for their preferred events by providing the required personal information. Administrators can manage events and monitor student registrations through an admin dashboard.
 
-The application uses a three-tier architecture consisting of the Presentation Layer, Application Layer and Database Layer.
+The application follows a Three-Tier Architecture consisting of the Presentation Layer, Application Layer, and Database Layer.
 
 ### Project Objectives
 
