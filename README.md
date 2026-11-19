@@ -292,7 +292,8 @@ The project provides practical experience in:
 ## 11. Application Output
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+### Homepage
+![Homepage](screenshots/homepage-new.png)
 
 ### Student Registration
 ![Registration](screenshots/registration.png)
